@@ -20,6 +20,58 @@
    #:ensure-unicode-backend
    #:require-capability
 
+   ;; backend GFs (for backend implementors)
+   #:backend-binary-property-p
+   #:backend-int-property
+   #:backend-char-name
+   #:backend-lookup-name
+   #:backend-numeric-value
+   #:backend-digit-value
+   #:backend-mirror-char
+   #:backend-age
+   #:backend-script-extensions
+   #:backend-property-value-name
+   #:backend-normalize
+   #:backend-normalized-p
+   #:backend-quick-check
+   #:backend-normalization-boundary-before-p
+   #:backend-normalization-boundary-after-p
+   #:backend-raw-decomposition
+   #:backend-casefold
+   #:backend-downcase
+   #:backend-upcase
+   #:backend-titlecase
+   #:backend-simple-casefold
+   #:backend-simple-downcase
+   #:backend-simple-upcase
+   #:backend-simple-titlecase
+   #:backend-idna-name-to-ascii
+   #:backend-idna-name-to-unicode
+   #:backend-idna-label-to-ascii
+   #:backend-idna-label-to-unicode
+   #:backend-idna-map
+   #:backend-make-break-iterator
+   #:backend-break-set-text
+   #:backend-break-first
+   #:backend-break-last
+   #:backend-break-next
+   #:backend-break-previous
+   #:backend-break-current
+   #:backend-break-following
+   #:backend-break-preceding
+   #:backend-break-is-boundary-p
+   #:backend-make-unicode-set
+   #:backend-uset-contains-p
+   #:backend-uset-span
+   #:backend-uset-span-back
+   #:backend-uset-size
+   #:backend-uset-empty-p
+   #:backend-uset-complement
+   #:backend-uset-add
+   #:backend-uset-remove
+   #:backend-uset-retain
+   #:backend-uset-clear
+
    ;; types / code points
    #:code-point
    #:code-point-p
