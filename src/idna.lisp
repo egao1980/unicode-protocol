@@ -1,6 +1,6 @@
 (in-package #:unicode-protocol)
 
-;;; ICU IDNA / UTS #46. Full ToASCII/ToUnicode lives here; cl-idna will rearrange later.
+;;; ICU IDNA / UTS #46. Full ToASCII/ToUnicode lives here; cl-stack-idna will rearrange later.
 ;;; Options as keywords (not bitflags): :std3 :transitional :check-bidi :check-contextj …
 
 (defgeneric backend-idna-name-to-ascii (backend name &key options)
