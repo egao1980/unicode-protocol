@@ -6,7 +6,7 @@
   ((kind :initarg :kind :reader break-kind
          :documentation "One of :grapheme :word :line :sentence.")
    (raw :initarg :raw :accessor break-raw :initform nil
-        :documentation "Backend-private state."))
+        :documentation "Backend handle / state (e.g. ICU UBreakIterator + text buffer)."))
   (:documentation "Text boundary iterator (UAX #29 / ICU BreakIterator)."))
 
 (defgeneric backend-make-break-iterator (backend kind &key locale)
