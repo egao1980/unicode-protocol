@@ -146,6 +146,8 @@
 
    ;; breaks (ICU BreakIterator)
    #:break-iterator
+   #:break-kind
+   #:break-raw
    #:make-break-iterator
    #:break-set-text
    #:break-first
@@ -160,6 +162,7 @@
 
    ;; UnicodeSet (ICU UnicodeSet)
    #:unicode-set
+   #:uset-raw
    #:make-unicode-set
    #:uset-contains-p
    #:uset-span
