@@ -3,6 +3,8 @@
 (deftest code-point-coercion
   (ok (= (ensure-code-point #\A) 65))
   (ok (= (ensure-code-point 65) 65))
+  (ok (= (ensure-code-point "A") 65))
+  (ok (= (string-code-point (code-point-string #x1F600)) #x1F600))
   (ok (signals (ensure-code-point #xD800) 'unicode-invalid-code-point))
   (ok (signals (ensure-code-point #x110000) 'unicode-invalid-code-point)))
 

@@ -76,6 +76,8 @@
    #:code-point
    #:code-point-p
    #:ensure-code-point
+   #:string-code-point
+   #:code-point-string
    #:+max-code-point+
 
    ;; properties (ICU uchar / UCharacter)
