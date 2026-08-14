@@ -1,5 +1,5 @@
 (defsystem "unicode-protocol"
-  :version "0.1.0"
+  :version "0.1.1"
   :description "CLOS Unicode protocol for cl-stack (ICU-shaped: properties, normalize, case, IDNA, breaks, UnicodeSet)"
   :author "egao1980"
   :license "MIT"
